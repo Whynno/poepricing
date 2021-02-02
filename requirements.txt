@@ -1,0 +1,4 @@
+tkinter
+webbrowser
+requests
+codecs
