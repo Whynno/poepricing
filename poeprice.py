@@ -90,11 +90,12 @@ def create_grid(data):
     if data:
         tabs_info = data.get('tabs')
         
-        col_number = len(tabs_info) // 15 + 1
+        
         for x in range(col_number):
             stash_frame.grid_columnconfigure(x, weight=1)
             
         if tabs_info:
+            col_number = len(tabs_info) // 15 + 1
             index = 0
             for tab in tabs_info:
                 if "Remove-only" not in tab.get('n'):
